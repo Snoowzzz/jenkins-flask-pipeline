@@ -64,13 +64,13 @@ To bypass file system mapping issues on mounted Windows drives (`/mnt/`), pull t
 
 ```bash
 # Copy key out of Windows mount to local WSL home directory
-cp "/mnt/s/main folder alternate/jenkins-server.pem" .
+cp "/mnt/s/main folder alternate/<YOUR KEY NAME>.pem" .
 
 # Set strict read-only permissions required by AWS SSH daemon
-chmod 400 jenkins-server.pem
+chmod 400 <YOUR KEY NAME>.pem
 
 # Establish SSH Connection
-ssh -i jenkins-server.pem ubuntu@<YOUR_EC2_PUBLIC_IP>
+ssh -i <YOUR KEY NAME>.pem ubuntu@<YOUR_EC2_PUBLIC_IP>
 ```
 
 ### 2. Correct Repository & Engine Deployment (Executed inside EC2)
