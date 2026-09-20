@@ -109,6 +109,8 @@ sudo systemctl status jenkins
 
 ### 3. Retrieve Web UI Admin Token
 
+Type this in the Ubuntu Terminal
+
 ```bash
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
